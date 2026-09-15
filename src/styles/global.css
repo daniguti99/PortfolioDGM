@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #0077ff;
+}

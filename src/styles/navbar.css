@@ -1,0 +1,117 @@
+/* ===== Navbar base ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.1rem 2.5rem;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Logo ===== */
+.navbar-logo {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.navbar-logo span {
+  color: #8b5cf6;
+  font-weight: 400;
+}
+
+/* ===== Links ===== */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.navbar-link {
+  position: relative;
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  transition: color 0.25s ease;
+}
+
+/* Subrayado animado */
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #8b5cf6;
+  transition: width 0.25s ease;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Link activo (página actual) */
+.navbar-link.active {
+  color: #fff;
+}
+
+.navbar-link.active::after {
+  width: 100%;
+}
+
+/* ===== Botón de contacto (CTA) ===== */
+.navbar-cta {
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.navbar-cta:hover {
+  background-color: #8b5cf6;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.35);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.2rem;
+  }
+
+  .navbar-links {
+    gap: 1rem;
+  }
+
+  .navbar-link {
+    font-size: 0.85rem;
+  }
+
+  .navbar-cta {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}
