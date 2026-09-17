@@ -284,8 +284,8 @@ body {
   .home {
     height: auto;
     min-height: calc(100vh - 88px - 76px);
-    padding: 2.5rem 1.5rem;
-    gap: 2rem;
+    padding: 0.5rem 0rem;
+    gap: 0rem;
   }
 
   .home-description {
@@ -296,7 +296,8 @@ body {
     flex-wrap: wrap;
     gap: 1.5rem;
     border: none;
-    padding: 0;
+    padding: 1rem;
+    padding-bottom: 2rem;
   }
 
   .home-stat-divider {
@@ -306,5 +307,6 @@ body {
   .home-tech {
     flex-wrap: wrap;
     gap: 1.5rem;
+    padding-bottom: 3rem;
   }
 }

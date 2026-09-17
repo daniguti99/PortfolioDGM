@@ -30,7 +30,17 @@ export default function Skills() {
     <section className="skills">
       <div className="skills-container">
 
+        <div className="skills-intro">
+          <span className="skills-intro-line"></span>
+          <p className="skills-intro-text">
+            Estas son las <span>tecnologías y herramientas</span> con las que trabajo día a día,
+            junto a las <span>habilidades</span> que he desarrollado a lo largo de mi formación
+            y experiencia profesional.
+          </p>
+        </div>
+
         <h2 className="skills-title">Skills Técnicas</h2>
+
 
         <div className="skills-grid">
 

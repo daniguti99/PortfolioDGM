@@ -281,10 +281,23 @@
 @media (max-width: 768px) {
   .project-content {
     padding: 1.4rem 1.5rem;
+    padding-right: 2rem;
   }
 
   .project-gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project-card {
+    width: 85%;
+  }
+
+  .project-coming-soon {
+    width: 73%;
+  }
+
+  .projects-subtitle {
+    padding-right: 1.8rem;
   }
 
   .lightbox {

@@ -183,7 +183,7 @@
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .about {
-    padding: 2rem;
+    padding: 2rem 0rem;
     gap: 2rem;
   }
 
@@ -205,5 +205,13 @@
   .cv-container {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+
+    .home-btn-primary {
+    display: inline-block;
+    width: auto;
+    align-self: center;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.85rem;
   }
 }

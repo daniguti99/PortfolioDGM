@@ -169,6 +169,7 @@
     min-height: calc(100vh - 88px - 76px);
     overflow: visible;
     padding: 1.5rem;
+    padding-right: 2rem;
   }
 
   .contact-title {
@@ -182,6 +183,22 @@
 
   .contact-btn {
     width: 100%;
+  }
+
+  .form-group {
+    width: 90%;
+  }
+
+  .contact-btn {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .contact {
+    padding-bottom: 7rem;
   }
 }
 

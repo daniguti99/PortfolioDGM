@@ -82,22 +82,19 @@ export default function About() {
               <span className="cv-date">2025 – 2026</span>
               <h4 className="cv-role">Formación Dual — CaixaBank Tech (Sevilla)</h4>
               <p className="cv-place">CaixaBank</p>
-              <p className="cv-desc">
-                Formación orientada a experiencia laboral real, integrado como un
-                profesional más dentro del equipo. Participé en tareas de desarrollo
-                y funciones de QA, colaborando en la validación, pruebas y calidad
-                del software.
-              </p>
+            </div>
+
+            <div className="cv-item">
+              <span className="cv-date">2025 - Actualidad</span>
+              <h4 className="cv-role">Monitor</h4>
+              <p className="cv-place">Crea Animación</p>
             </div>
 
             <div className="cv-item">
               <span className="cv-date">2018 – 2025</span>
               <h4 className="cv-role">Monitor Escuelas Deportivas</h4>
               <p className="cv-place">Escuela Fútbol Base Carmona</p>
-              <p className="cv-desc">
-                Gestión de grupos, planificación de actividades y desarrollo de
-                habilidades de liderazgo, comunicación y trabajo en equipo.
-              </p>
+
             </div>
 
             <div className="cv-item">
@@ -105,6 +102,10 @@ export default function About() {
               <h4 className="cv-role">Profesor Particular</h4>
               <p className="cv-place">Autónomo</p>
             </div>
+
+            <a href="/experiencia" className="home-btn-primary">
+              Ver con detalle
+            </a>
           </div>
         </div>
       </div>

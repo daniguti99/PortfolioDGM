@@ -127,10 +127,11 @@ export default function Contact() {
                   required
                 ></textarea>
               </div>
-
+            <div className="contact">
               <button type="submit" className="contact-btn">
                 Enviar mensaje
               </button>
+            </div>
             </form>
           </div>
 
