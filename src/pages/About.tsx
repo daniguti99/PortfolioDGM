@@ -1,5 +1,6 @@
 import "../styles/about.css";
 import foto3 from "../assets/dani.jpeg";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -103,9 +104,9 @@ export default function About() {
               <p className="cv-place">Autónomo</p>
             </div>
 
-            <a href="/experiencia" className="home-btn-primary">
+            <Link to="/experiencia" className="home-btn-primary">
               Ver con detalle
-            </a>
+            </Link>
           </div>
         </div>
       </div>
