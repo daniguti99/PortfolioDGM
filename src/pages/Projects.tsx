@@ -113,7 +113,7 @@ export default function Projects() {
               <div className="project-video">
                 <p className="project-description">Vídeo explicativo del proyecto</p>
                 <video controls>
-                  <source src={videoZportia} type="video/mp4" />
+                  <source src="https://res.cloudinary.com/dwxrhwvvk/video/upload/v1789721260/VideoZportia.mp4" type="video/mp4" />
                   Tu navegador no soporta la reproducción de vídeo.
                 </video>
               </div>
