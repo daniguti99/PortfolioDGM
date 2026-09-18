@@ -2,7 +2,7 @@
   width: 100%;
   height: calc(100vh - 88px - 76px); /* navbar + footer */
   overflow: hidden;
-  padding: 0rem 3rem 0;
+  padding: 2.5rem 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +37,7 @@
 
 .contact-content {
   display: grid;
+  max-height: 700px;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 5rem;
 }
