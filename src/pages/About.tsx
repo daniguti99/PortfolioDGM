@@ -104,7 +104,7 @@ export default function About() {
               <p className="cv-place">Autónomo</p>
             </div>
 
-            <Link to="/experiencia" className="home-btn-primary">
+            <Link to="/experiencia" className="cv-link-btn">
               Ver con detalle
             </Link>
           </div>
