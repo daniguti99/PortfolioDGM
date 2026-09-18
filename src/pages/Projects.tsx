@@ -14,8 +14,6 @@ import ImgZportia6 from "../assets/ImgZportia6.png";
 import ImgZportia7 from "../assets/ImgZportia7.png";
 import dgm from "../assets/dgm.jpg";
 
-// VIDEO
-import videoZportia from "../assets/VideoZportia.mp4";
 
 export default function Projects() {
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
