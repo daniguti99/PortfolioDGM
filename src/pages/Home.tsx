@@ -5,7 +5,6 @@ import springImg from "../assets/spring.png";
 import reactImg from "../assets/react.png";
 import angularImg from "../assets/angular.png";
 import tsImg from "../assets/ts.png";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -37,13 +36,13 @@ export default function Home() {
         </p>
 
         <div className="home-buttons">
-          <Link to="/proyectos" className="home-btn-primary">
+          <a href="/proyectos" className="home-btn-primary">
             Ver proyectos
-          </Link>
+          </a>
 
-          <Link to="/contacto" className="home-btn-secondary">
+          <a href="/contacto" className="home-btn-secondary">
             Contactar
-          </Link>
+          </a>
         </div>
       </div>
 

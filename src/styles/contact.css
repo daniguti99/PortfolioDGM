@@ -37,7 +37,6 @@
 
 .contact-content {
   display: grid;
-  max-height: 700px;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 5rem;
 }
@@ -164,18 +163,12 @@
   color: #fff;
 }
 
-.contact-submit {
-  display: flex;
-  justify-content: flex-start;
-}
-
 @media (max-width: 768px) {
   .contact {
     height: auto;
     min-height: calc(100vh - 88px - 76px);
     overflow: visible;
     padding: 1.5rem;
-    padding-right: 2rem;
   }
 
   .contact-title {
@@ -189,26 +182,6 @@
 
   .contact-btn {
     width: 100%;
-  }
-
-  .form-group {
-    width: 90%;
-  }
-
-  .contact-btn {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .contact-submit {
-    margin-bottom: 8rem;
-  }
-
-  .contact {
-    padding-bottom: 7rem;
   }
 }
 

@@ -3,6 +3,15 @@ import "../styles/projects.css";
 
 // LOGOS
 import logoZportia from "../assets/logozportia.png";
+import logoProfe from "../assets/logoprofe.svg";
+
+//GALERÍA PROFE (descomentar cuando se añadan las capturas a ../assets/)
+import ImgProFE1 from "../assets/ImgProFE1.png";
+import ImgProFE2 from "../assets/ImgProFE2.png";
+import ImgProFE3 from "../assets/ImgProFE3.png";
+import ImgProFE4 from "../assets/ImgProFE4.png";
+import ImgProFE5 from "../assets/ImgProFE5.png";
+import ImgProFE6 from "../assets/ImgProFE6.png";
 
 // GALERÍA ZPORTIA
 import ImgZportia1 from "../assets/ImgZportia1.png";
@@ -14,6 +23,8 @@ import ImgZportia6 from "../assets/ImgZportia6.png";
 import ImgZportia7 from "../assets/ImgZportia7.png";
 import dgm from "../assets/dgm.jpg";
 
+// VIDEO (descomentar cuando vuelva a existir ../assets/VideoZportia.mp4)
+// import videoZportia from "../assets/VideoZportia.mp4";
 
 export default function Projects() {
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
@@ -107,14 +118,108 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* ===== VÍDEO ===== */}
+              {/* ===== VÍDEO =====
+                  Descomentar cuando se copie VideoZportia.mp4 a ../assets/
+                  y el import de VIDEO al principio del archivo:
+
               <div className="project-video">
                 <p className="project-description">Vídeo explicativo del proyecto</p>
                 <video controls>
-                  <source src="https://res.cloudinary.com/dwxrhwvvk/video/upload/v1789721260/VideoZportia.mp4" type="video/mp4" />
+                  <source src={videoZportia} type="video/mp4" />
                   Tu navegador no soporta la reproducción de vídeo.
                 </video>
               </div>
+              */}
+            </div>
+          </div>
+
+          {/* ===== PROFE ===== */}
+          <div className="project-card">
+            <div className="project-content">
+
+              {/* Logo pequeño */}
+              <div className="project-logo-small">
+                <img src={logoProfe} alt="Logo ProFE" />
+              </div>
+
+              <h3 className="project-title">ProFE — Plataforma para docentes</h3>
+
+              <p className="project-description">
+                Plataforma desarrollada para docentes que permite organizar su
+                programación por ciclos, cursos, unidades didácticas y sesiones.
+                Incluye autenticación segura con JWT, registro con foto de perfil,
+                catálogo público para explorar y compartir sesiones entre
+                profesores, y exportación de sesiones a PDF.
+              </p>
+
+              <ul className="project-highlights">
+                <li>Frontend con React 19 + TypeScript + Vite</li>
+                <li>Backend con Spring Boot 4.1 + Java 21</li>
+                <li>Arquitectura hexagonal (puertos y adapters)</li>
+                <li>Base de datos MySQL con scripts de esquema versionados</li>
+                <li>Autenticación con JWT, BCrypt y rutas protegidas</li>
+                <li>Catálogo público con ordenación, paginación y exportación a PDF</li>
+                <li>Registro con foto de perfil (Cloudinary) y documentación con Swagger/OpenAPI</li>
+              </ul>
+
+              <div className="project-links">
+                <a
+                  href="https://profe-frontend-one.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn"
+                >
+                  Proyecto desplegado
+                </a>
+
+                <a
+                  href="https://github.com/daniguti99/ProFE-frontend.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn"
+                >
+                  Repositorio Frontend
+                </a>
+
+                <a
+                  href="https://github.com/daniguti99/ProFE-backend.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn"
+                >
+                  Repositorio Backend
+                </a>
+
+                                <a
+                  href="https://profe-backend-1.onrender.com/swagger-ui.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-btn"
+                >
+                  Documentación API
+                </a>
+              </div>
+
+              {//===== GALERÍA ===== 
+
+              <div className="project-gallery">
+                {[
+                  ImgProFE1,
+                  ImgProFE2,
+                  ImgProFE3,
+                  ImgProFE4, 
+                  ImgProFE5,
+                  ImgProFE6
+                ].map((src, i) => (
+                  <img
+                    key={i}
+                    src={src}
+                    alt={`ProFE captura ${i + 1}`}
+                    onClick={() => setLightboxImg(src)}
+                  />
+                ))}
+              </div>
+              }
             </div>
           </div>
 
