@@ -1,5 +1,6 @@
 import "../styles/about.css";
 import foto3 from "../assets/dani.jpeg";
+import iaImg from "../assets/IA.jpg";
 
 export default function About() {
   return (
@@ -39,34 +40,43 @@ export default function About() {
 
       {/* ===== Bloque medio: formación en IA ===== */}
       <div className="ai-block">
-        <div className="ai-badge">
-          <span className="ai-badge-dot"></span>
-          En curso
+
+        {/* Imagen del bloque */}
+        <div className="ai-img">
+          <img src={iaImg} alt="Inteligencia artificial" />
         </div>
 
-        <h3 className="ai-title">Formación en Inteligencia Artificial</h3>
+        {/* Contenido del bloque */}
+        <div className="ai-content">
+          <div className="ai-badge">
+            <span className="ai-badge-dot"></span>
+            En curso
+          </div>
 
-        <p className="ai-text">
-          Actualmente, estoy profundizando en metodologías modernas de
-          desarrollo de software que aplico en un proyecto personal de
-          práctica. Me estoy formando en{" "}
-          <strong>Spec-Driven Development (SDD)</strong>, donde cada
-          funcionalidad nace como especificación antes de tocar código, y en{" "}
-          <strong>EARS</strong> (Easy Approach to Requirements Syntax) para
-          definir requisitos de forma estructurada y verificable. Además,
-          estoy explorando el uso de <strong>MCP</strong> (Model Context
-          Protocol) para integrar herramientas de verificación automatizada
-          en mi flujo de trabajo, así como la creación de{" "}
-          <strong>multiagentes</strong> para dividir tareas complejas y
-          mejorar la productividad.
-        </p>
+          <h3 className="ai-title">Formación en Inteligencia Artificial</h3>
 
-        <p className="ai-text">
-          Todo lo aprendido lo estoy aplicando en un{" "}
-          <strong>proyecto real</strong> que me permite combinar mi
-          experiencia en desarrollo backend y frontend con estas
-          metodologías.
-        </p>
+          <p className="ai-text">
+            Actualmente, estoy profundizando en metodologías modernas de
+            desarrollo de software que aplico en un proyecto personal de
+            práctica. Me estoy formando en{" "}
+            <strong>Spec-Driven Development (SDD)</strong>, donde cada
+            funcionalidad nace como especificación antes de tocar código, y en{" "}
+            <strong>EARS</strong> (Easy Approach to Requirements Syntax) para
+            definir requisitos de forma estructurada y verificable. Además,
+            estoy explorando el uso de <strong>MCP</strong> (Model Context
+            Protocol) para integrar herramientas de verificación automatizada
+            en mi flujo de trabajo, así como la creación de{" "}
+            <strong>multiagentes</strong> para dividir tareas complejas y
+            mejorar la productividad.
+          </p>
+
+          <p className="ai-text">
+            Todo lo aprendido lo estoy aplicando en un{" "}
+            <strong>proyecto real</strong> que me permite combinar mi
+            experiencia en desarrollo backend y frontend con estas
+            metodologías.
+          </p>
+        </div>
       </div>
 
       {/* ===== Bloque inferior: currículum ===== */}

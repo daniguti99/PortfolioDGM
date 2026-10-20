@@ -187,9 +187,9 @@
   width: 100%;
   max-width: 1600px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.9rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
   padding: 2.2rem 2.5rem;
   border: 1px dashed #333;
   background: rgba(255, 255, 255, 0.015);
@@ -201,6 +201,36 @@
 
 .ai-block:hover {
   border-color: rgba(139, 92, 246, 0.6);
+}
+
+/* Imagen del bloque (mismo tratamiento que la foto de perfil) */
+.ai-img {
+  flex-shrink: 0;
+  width: 360px;
+}
+
+.ai-img img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #8b5cf6;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.ai-block:hover .ai-img img {
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.45);
+}
+
+/* Columna de texto del bloque */
+.ai-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  min-width: 0;
 }
 
 .ai-badge {
@@ -276,8 +306,19 @@
   }
 
   .ai-block {
+    flex-direction: column;
     padding: 1.6rem 1.4rem;
+    gap: 1.5rem;
     align-items: center;
     text-align: center;
+  }
+
+  .ai-img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .ai-content {
+    align-items: center;
   }
 }
