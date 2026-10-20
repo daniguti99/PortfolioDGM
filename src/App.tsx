@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='//PortfolioDGM'>
       <Layout>
         <Routes>
           <Route path='/' element={<Home />} />
