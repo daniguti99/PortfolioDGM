@@ -139,6 +139,20 @@ export default function Skills() {
           </div>
         </div>
 
+        <h2 className="skills-title">IA aplicada al desarrollo</h2>
+
+        <div className="skills-list">
+          <div className="skill-soft">Spec-Driven Development (SDD)</div>
+          <div className="skill-soft">Requisitos con EARS</div>
+          <div className="skill-soft">Orquestación de agentes</div>
+          <div className="skill-soft">Model Context Protocol (MCP)</div>
+          <div className="skill-soft">Context7</div>
+          <div className="skill-soft">Chrome DevTools MCP</div>
+          <div className="skill-soft">Verificación automatizada</div>
+          <div className="skill-soft">Arquitectura hexagonal</div>
+          <div className="skill-soft">Documentación con IA</div>
+        </div>
+
         <h2 className="skills-title">Skills Profesionales</h2>
 
         <div className="skills-list">

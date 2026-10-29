@@ -32,7 +32,7 @@ export default function Experience() {
 
             <ul className="exp-highlights">
               <li>Participación en desarrollo backend con Java y Spring.</li>
-              <li>Integración de IA en el flujo de desarrollo con GitHub Copilot y agentes especializados.</li>
+              <li>Integración de IA en el flujo de desarrollo con GitHub Copilot y agentes especializados para análisis, revisión y verificación de calidad.</li>
               <li>Formación práctica en arquitectura hexagonal y microservicios.</li>
               <li>Validación funcional y técnica de APIs.</li>
               <li>Pruebas manuales y automatizadas en entornos reales.</li>

@@ -223,6 +223,38 @@ export default function Projects() {
             </div>
           </div>
 
+          {/* ===== TEMIA ===== */}
+          <div className="project-card">
+            <div className="project-content">
+
+              <div className="project-logo-small project-logo-text">
+                <span>T</span>
+              </div>
+
+              <div className="project-title-row">
+                <h3 className="project-title">TemIA — Estudio con IA</h3>
+                <span className="project-badge">En desarrollo</span>
+              </div>
+
+              <p className="project-description">
+                Aplicación de estudio en la que el usuario sube sus apuntes,
+                obtiene resúmenes generados con IA y practica con exámenes tipo
+                test corregidos al instante. Es también el banco de pruebas
+                donde aplico el flujo SDD completo.
+              </p>
+
+              <ul className="project-highlights">
+                <li>Backend con Spring Boot 4 y Java 17 bajo arquitectura hexagonal</li>
+                <li>Frontend con Angular 20, componentes standalone y estilos por tokens</li>
+                <li>Proveedor de IA aislado detrás de un puerto (LlmPort)</li>
+                <li>Flujo SDD: US → spec en EARS → plan → tareas → validación</li>
+                <li>Agentes coordinator, planner, implementer y reviewer con permisos mínimos</li>
+                <li>Verificación con MCP: Chrome DevTools para interfaz y Context7 para documentación</li>
+                <li>En desarrollo activo: autenticación y modelo de dominio</li>
+              </ul>
+            </div>
+          </div>
+
           {/* ===== PORTFOLIO ===== */}
           <div className="project-card">
             <div className="project-content">

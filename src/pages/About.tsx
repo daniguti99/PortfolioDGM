@@ -38,43 +38,107 @@ export default function About() {
         </div>
       </div>
 
-      {/* ===== Bloque medio: formación en IA ===== */}
+      {/* ===== Bloque medio: IA aplicada al desarrollo ===== */}
       <div className="ai-block">
 
         {/* Imagen del bloque */}
         <div className="ai-img">
-          <img src={iaImg} alt="Inteligencia artificial" />
+          <img src={iaImg} alt="Inteligencia artificial aplicada al desarrollo" />
         </div>
 
         {/* Contenido del bloque */}
         <div className="ai-content">
           <div className="ai-badge">
             <span className="ai-badge-dot"></span>
-            En curso
+            IA como disciplina de ingeniería
           </div>
 
-          <h3 className="ai-title">Formación en Inteligencia Artificial</h3>
+          <h3 className="ai-title">Desarrollo asistido por IA con método propio</h3>
 
           <p className="ai-text">
-            Actualmente, estoy profundizando en metodologías modernas de
-            desarrollo de software que aplico en un proyecto personal de
-            práctica. Me estoy formando en{" "}
-            <strong>Spec-Driven Development (SDD)</strong>, donde cada
-            funcionalidad nace como especificación antes de tocar código, y en{" "}
-            <strong>EARS</strong> (Easy Approach to Requirements Syntax) para
-            definir requisitos de forma estructurada y verificable. Además,
-            estoy explorando el uso de <strong>MCP</strong> (Model Context
-            Protocol) para integrar herramientas de verificación automatizada
-            en mi flujo de trabajo, así como la creación de{" "}
-            <strong>multiagentes</strong> para dividir tareas complejas y
-            mejorar la productividad.
+            No uso la IA como un autocompletado más rápido. La uso como un
+            equipo de ingeniería con roles, permisos y criterios de aceptación:
+            cada funcionalidad nace como historia de usuario y se convierte en
+            una especificación con requisitos verificables antes de escribir una
+            sola línea de código.
+          </p>
+
+          <div className="ai-pillars">
+            <article className="ai-pillar">
+              <h4>Spec-Driven Development</h4>
+              <p>
+                El ciclo es US → spec → plan → tareas → implementación →
+                validación. Nada se implementa sin una spec aprobada, y cada
+                spec tiene estado: borrador, aprobada o implementada.
+              </p>
+            </article>
+
+            <article className="ai-pillar">
+              <h4>EARS</h4>
+              <p>
+                Requisitos escritos con cinco patrones —ubicuo, evento, estado,
+                opcional y no deseado—, una obligación por frase y siempre
+                observables desde fuera: pantalla, respuesta HTTP o dato
+                guardado.
+              </p>
+            </article>
+
+            <article className="ai-pillar">
+              <h4>Sistema multiagente</h4>
+              <p>
+                Un coordinador reparte fases y no escribe código; el planner
+                solo toca US y specs; el implementer ejecuta una única tarea con
+                pruebas primero; el reviewer no puede editar nada y valida
+                requisito por requisito.
+              </p>
+            </article>
+
+            <article className="ai-pillar">
+              <h4>MCP</h4>
+              <p>
+                Context7 para contrastar documentación actualizada y Chrome
+                DevTools para verificar consola, red y vista móvil. Las
+                herramientas entran por protocolo, no pegadas al prompt.
+              </p>
+            </article>
+          </div>
+
+          <div className="ai-flow" aria-label="Ciclo de trabajo con IA">
+            <span className="ai-flow-step">US</span>
+            <span className="ai-flow-arrow">→</span>
+            <span className="ai-flow-step">spec</span>
+            <span className="ai-flow-arrow">→</span>
+            <span className="ai-flow-step">plan</span>
+            <span className="ai-flow-arrow">→</span>
+            <span className="ai-flow-step">tareas</span>
+            <span className="ai-flow-arrow">→</span>
+            <span className="ai-flow-step">implementación</span>
+            <span className="ai-flow-arrow">→</span>
+            <span className="ai-flow-step">validación</span>
+          </div>
+
+          <p className="ai-text">
+            El flujo tiene puertas humanas: yo apruebo la spec y el plan, y el
+            reviewer cierra con un veredicto trazable. Si algo falla, hay un
+            máximo de dos vueltas de corrección; si no se cierra, se para y se
+            explica. La arquitectura no se negocia: hexagonal en backend,
+            dominio sin dependencias de Spring ni JPA, y proveedor de IA detrás
+            de un puerto (<strong>LlmPort</strong>).
           </p>
 
           <p className="ai-text">
-            Todo lo aprendido lo estoy aplicando en un{" "}
-            <strong>proyecto real</strong> que me permite combinar mi
-            experiencia en desarrollo backend y frontend con estas
-            metodologías.
+            Lo aplico en <strong>ProFE</strong>, plataforma para docentes
+            desplegada en producción, y en <strong>TemIA</strong>, una app de
+            estudio con Spring Boot y Angular. El método está empaquetado en un
+            kit reutilizable —agentes, skills, constitución y plantillas de
+            spec— que me permite arrancar un proyecto nuevo con el flujo ya
+            montado.
+          </p>
+
+          <p className="ai-text ai-text-closing">
+            El resultado no es escribir más rápido: es escribir código
+            trazable, donde cada requisito está cubierto por una prueba o una
+            comprobación concreta.
           </p>
         </div>
       </div>

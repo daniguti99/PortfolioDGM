@@ -57,6 +57,7 @@
 .projects-list .project-card:nth-child(2) { animation-delay: 0.4s; }
 .projects-list .project-card:nth-child(3) { animation-delay: 0.55s; }
 .projects-list .project-card:nth-child(4) { animation-delay: 0.7s; }
+.projects-list .project-card:nth-child(5) { animation-delay: 0.85s; }
 
 .project-card:hover {
   border-color: rgba(139, 92, 246, 0.5);
@@ -86,7 +87,44 @@
   background: #0a0a0a;
 }
 
+/* Logo textual (proyectos sin imagen propia) */
+.project-logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(139, 92, 246, 0.5);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(139, 92, 246, 0.05));
+}
+
+.project-logo-text span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #c4b5fd;
+  letter-spacing: -0.03em;
+}
+
 /* ===== Títulos y texto ===== */
+.project-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.project-badge {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid rgba(139, 92, 246, 0.45);
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.1);
+  color: #c4b5fd;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
 .project-title {
   font-size: 1.3rem;
   font-weight: 800;
