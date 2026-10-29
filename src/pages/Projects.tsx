@@ -142,7 +142,10 @@ export default function Projects() {
                 <img src={logoProfe} alt="Logo ProFE" />
               </div>
 
-              <h3 className="project-title">ProFE — Plataforma para docentes</h3>
+              <div className="project-title-row">
+                <h3 className="project-title">ProFE — Plataforma para docentes</h3>
+                <span className="project-badge">En producción</span>
+              </div>
 
               <p className="project-description">
                 Plataforma desarrollada para docentes que permite organizar su
@@ -153,6 +156,9 @@ export default function Projects() {
               </p>
 
               <ul className="project-highlights">
+                <li>Desarrollada con flujo SDD: 15 specs, requisitos en EARS y aprobación humana en cada fase</li>
+                <li>Agentes planner, implementer y reviewer con permisos mínimos</li>
+                <li>Verificación con MCP: Chrome DevTools para interfaz y Context7 para documentación</li>
                 <li>Frontend con React 19 + TypeScript + Vite</li>
                 <li>Backend con Spring Boot 4.1 + Java 21</li>
                 <li>Arquitectura hexagonal (puertos y adapters)</li>
