@@ -50,7 +50,10 @@ export default function Projects() {
                 <img src={logoZportia} alt="Logo Zportia" />
               </div>
 
-              <h3 className="project-title">Zportia — Proyecto Final DAW</h3>
+              <div className="project-title-row">
+                <h3 className="project-title">Zportia — Proyecto Final DAW</h3>
+                <span className="project-badge project-badge-soon">Próximamente en producción</span>
+              </div>
 
               <p className="project-description">
                 Plataforma social deportiva desarrollada como proyecto final
